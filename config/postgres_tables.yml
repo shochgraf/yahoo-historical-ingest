@@ -1,0 +1,7 @@
+^GSPC:
+  load_table: pdw.dw_load_yh_spx_daily
+  target_table: pdw.dw_fact_yh_spx_daily
+
+^VIX:
+  load_table: pdw.dw_load_yh_vix_daily
+  target_table: pdw.dw_fact_yh_vix_daily

@@ -1,0 +1,11 @@
+prod:
+  pg_db_name: prod
+  pg_port: 5432
+  pg_host: dev.cf1uincw5nxv.us-east-1.rds.amazonaws.com
+  pg_region: us-west-1
+
+staging:
+  pg_db_name: dev
+  pg_port: 5432
+  pg_host: dev.cf1uincw5nxv.us-east-1.rds.amazonaws.com
+  pg_region: us-west-1

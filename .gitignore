@@ -1,0 +1,6 @@
+# Specific files to ignore
+.DS_Store
+.pyc
+# Directories to ignore
+env
+
