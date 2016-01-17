@@ -33,14 +33,6 @@ class YahooFinance(object):
       end_date = datetime.strptime(end_date, "%m-%d-%Y").date()
     return (start_date, end_date)
 
-  # def _download_file(self, url):
-  #   #   response = requests.get(url)
-  #   #   return response
-  #   ftpstream = urllib.request.urlopen(url)
-  #   csvfile = csv.reader(codecs.iterdecode(ftpstream, 'utf-8'))
-  #   for line in csvfile:
-  #       print(line) #do something with line
-
   def _download_file(self, url):
     local_filename = "csv_file_to_load"
     # NOTE the stream=True parameter
