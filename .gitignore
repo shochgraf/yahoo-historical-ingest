@@ -3,4 +3,4 @@
 .pyc
 # Directories to ignore
 env
-
+__pycache__

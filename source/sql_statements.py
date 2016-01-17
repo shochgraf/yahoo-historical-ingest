@@ -54,7 +54,7 @@ class Raw_sql(object):
              close,
              volume,
              adj_close
-      FROM %(target_table)s;
+      FROM %(load_table)s;
 
       END TRANSACTION;
       """ % {"load_table": self.load_table, "target_table": self.target_table}
