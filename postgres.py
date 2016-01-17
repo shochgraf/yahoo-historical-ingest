@@ -1,4 +1,3 @@
-# Filename: redshiftWrappers.py
 import sys
 import sqlalchemy
 import psycopg2
