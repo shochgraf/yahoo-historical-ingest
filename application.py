@@ -61,10 +61,11 @@ def _drop_table_wrapper(symbol):
   postgres_client.execute_query(raw_sql.drop_table(),
                                 result=False, 
                                 file=False)
-  return _file_cleanup()
+  return _file_cleanup(symbol)
 
-def _file_cleanup():
-  os.remove("csv_file_to_load")
+def _file_cleanup(symbol):
+  local_filename = "-".join(("yh-hist", symbol, "csv"))
+  os.remove(local_filename)
 
 for symbol in tickers.symbols:
   print(symbol)
